@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #c5c5c5; 
+    padding: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex; 
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo-img {
+    max-width: 90px;
+    height: auto;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; 
+    justify-content: center;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.logout-img {
+    max-width: 20px;
+    height: auto;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1919ae;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1919ae;
+}
+
+
+
+section.job-offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.job-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    word-wrap: break-word;
+    position: relative;
+}
+
+
+.job-card.empty {
+    background-color: #fef5f5;
+    border: 1px solid #ddd;
+}
+
+.job-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.details {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.details span {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 3px 5px;
+    background-color: #eee;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.apply-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #d6e4f0;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.apply-button:hover {
+    background-color: #b3cce0;
+}
+
+
+.add-annonce-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+a.add-annonce-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #d6e4f0;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+a.add-annonce-btn:hover {
+    background-color: #b3cce0;
+}
+
+.delete-button {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+.mod-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 5px 8.9px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mod-button:hover {
+    background-color: darkblue;
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    section.job-offers {
+        margin: 10px;
+        gap: 10px;
+    }
+
+    .job-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    header {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        max-width: 70px;
+    }
+
+    .search-bar {
+        align-items: center;
+    }
+
+    .logout {
+        margin-right: 10px;
+        max-width: 30px;
+    }
+
+    .search-bar input {
+        width: 80%;
+    }
+
+    button {
+        padding: 8px;
+    }
+
+    .job-card h2 {
+        font-size: 16px;
+    }
+
+    .job-card p {
+        font-size: 12px;
+    }
+
+    .details {
+        font-size: 10px;
+    }
+}
